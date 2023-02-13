@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python</title>
+  </head>
+
+
+  <body>
+
+        <nav id="navbar">
+      <header>
+        <h1>Python</h1>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Conditional_Statements">Conditional Statements</a>
+        <a class="nav-link" href="#Loops">Loops</a>
+        <a class="nav-link" href="#Reference">Reference</a>
+      </header>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header><h1 class="topic">Introduction</h1></header>
+        <p class="description">Python is a very popular general-purpose interpreted, interactive, object-oriented, and high-level programming language. Python is dynamically-typed and garbage-collected programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL).</p>
+        <code class="code"># This is my first Python program.
+# This will print 'Hello, World!' as the output
+<br><br>
+print ("Hello, World!");
+        </code>
+        <p class="description">Advantages of learning python: 
+          <ul>
+            <li>Python is Interpreted − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</li><br>
+            <li>Python is Interactive − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li><br>
+            <li>Python is Object-Oriented − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li><br>
+            <li>Python is a Beginner's Language − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section id="Variables" class="main-section">
+        <header><h1 class="topic">Variables</h1></header>
+        <p class="description">Every Python variable should have a unique name like a, b, c. A variable name can be meaningful like color, age, name etc. There are certain rules which should be taken care while naming a Python variable:
+          <ul>
+            <li>A variable name must start with a letter or the underscore character.</li><br>
+            <li>A variable name cannot start with a number or any special character like $, (, * % etc.</li><br>
+            <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).</li><br>
+            <li>Python variable names are case-sensitive which means Name and NAME are two different variables in Python.</li><br>
+            <li>Python reserved keywords cannot be used naming the variable.</li>
+          </ul></p>
+        <code class="code">a = b = c = 100
+<br>
+print (a) #100
+print (b) #100
+print (c) #100</code>
+        <p class="description">Once we create a Python variable and assign a value to it, we can print it using print() function. Following is the extension of previous example and shows how to print different variables in Python:</p>
+        <code class="code">counter = 100          # Creates an integer variable
+miles   = 1000.0       # Creates a floating point variable
+name    = "Zara Ali"   # Creates a string variable
+<br><br>
+print (counter)
+print (miles)
+print (name)</code>
+      </section>
+
+      <section id="Functions" class="main-section">
+        <header><h1 class="topic">Functions</h1></header>
+        <p class="desctiption">You can define functions to provide the required functionality. Here are simple rules to define a function in Python:
+          <ul>
+            <li>Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).</li><br>
+            <li>Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</li><br>
+            <li>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</li><br>
+            <li>The code block within every function starts with a colon (:) and is indented.</li><br>
+            <li>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.</li>
+          </ul></p>
+        <code class="code"># Function definition is here
+def printme( str ):
+   "This prints a passed string into this function"
+   print str
+   return;<br>
+
+# Now you can call printme function
+printme("I'm first call to user defined function!")
+printme("Again second call to the same function")</code>
+        <p class="description">Defining a function only gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code. Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt.</p>
+      </section>
+
+      <section id="Conditional_Statements" class="main-section">
+       <header><h1 class="topic">Conditional Statements</h1></header>
+        <p class="description">Python programming language assumes any non-zero and non-null values as TRUE, and if it is either zero or null, then it is assumed as FALSE value.
+Python programming language provides following types of decision making statements:
+                <ul>
+                  <li>An if statement consists of a boolean expression followed by one or more statements.</li><br>
+                  <li>An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE.</li><br>
+                  <li>You can use one if or else if statement inside another if or else if statement(s).</li>
+                </ul></p>
+        <code class="code">var = 100
+if ( var == 100 ) : print "Value of expression is 100"
+print "Good bye!"</code>
+        <p class="description">If the suite of an if clause consists only of a single line, it may go on the same line as the header statement.</p>
+      </section>
+
+      <section id="Loops" class="main-section">
+        <header><h1 class="topic">Loops</h1></header>
+        <p class="description">A loop statement allows us to execute a statement or group of statements multiple times.Python programming language provides following types of loops to handle looping requirements:
+          <ul>
+            <li>While loop - repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</li><br>
+            <li>For loop - executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</li><br>
+            <li>Nested loop - You can use one or more loop inside any another while, for or do..while loop.</li>
+          </ul></p>
+        <p class="description">Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed. Here are a few control statements:
+          <ul>
+            <li>Break - terminates the loop statement and transfers execution to the statement immediately following the loop.</li><br>
+            <li>Continue - causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.</li><br>
+            <li>Pass - The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.</li>
+          </ul></p>
+      </section>
+
+      <section id="Reference" class="main-section">
+        <header><h1 class="topic">Reference</h1></header>
+        <p class="description">The python documentation belongs to <a href="https://www.tutorialspoint.com/python/index.htm">tutorialspoint.</a> (The python documentation was only used for practice purposes. The main purpose of this assignment was to practice using HTML and CSS to create and style a template page for technical documentation.)</p>
+    </main>
+
+  </body>
+</html>

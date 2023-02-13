@@ -1,0 +1,51 @@
+@media (min-width: 900px) {
+    .code {
+    display: block;
+    background-color: rgba(225, 217, 209, 0.8);
+  }
+  }
+  
+  body {
+    background-color: rgba(259, 259, 249, 0.3);
+    font-family: arial;
+    text-align: left;
+  }
+  
+  #Reference {
+    font-size: 12px;
+  }
+  
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    float: left;
+    justify-content: space-between;
+    background-color: rgba(245, 245, 245);
+    width: 200px;
+    text-align: center;
+  }
+  
+  main {
+    margin-top: 20px;
+    margin-left: 250px;
+  
+  }
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(182, 182, 180, 0.2);
+  }
+  
+  #navbar h1 {
+    font-size: 40px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
